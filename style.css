@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111315;
+  color: #e8e8e8;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #1b1f23;
+  padding: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  border: 1px solid #30363d;
+}
+
+.tag {
+  color: #a3b18a;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin: 20px 0 10px;
+  color: #ffffff;
+}
+
+.hero h1 span,
+.about h2 span,
+.social h2 span {
+  color: #a3b18a;
+}
+
+.subtitle {
+  color: #a0a0a0;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.hero-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #0a0a09;
+  max-width: 100%;
+}
+
+.button {
+  display: inline-block;
+  background-color: #a3b18a;
+  color: #111315;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.about {
+  background-color: #1b1f23;
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+}
+
+.about h2,
+.social h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #b5b5b5;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.social {
+  background-color: #1b1f23;
+  padding: 35px;
+  margin-top: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #30363d;
+}
+
+.social p {
+  color: #999999;
+  font-size: 14px;
+}
+
+.medias {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.medias a {
+  color: #a3b18a;
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.medias a:hover {
+  color: #ffffff;
+  transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 25px 15px;
+  }
+
+  .hero {
+    padding: 35px;
+    gap: 25px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-image img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+
+@media (max-width: 540px) {
+  body {
+    padding: 15px 10px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .hero-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about {
+    padding: 25px 20px;
+  }
+
+  .about h2,
+  .social h2 {
+    font-size: 22px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .social {
+    padding: 25px 15px;
+  }
+
+  .medias {
+    gap: 20px;
+  }
